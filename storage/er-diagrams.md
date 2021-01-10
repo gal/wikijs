@@ -2,7 +2,7 @@
 title: ER Diagrams
 description: ER diagrams notes
 published: true
-date: 2021-01-10T21:50:27.057Z
+date: 2021-01-10T22:01:59.961Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-10T21:50:27.057Z
@@ -61,6 +61,36 @@ Arrows imply **one**, a line without an arrow signifies many between the relatio
 - If the same entity set appears more than once in a relationship, the relationship is recursive
 
 ![entity-relationship-recurision.png](/entity-relationship-recurision.png)
+
+### Hierarchies
+
+![entity-relationship-hierarchies.png](/entity-relationship-hierarchies.png)
+
+- At least 1 employee does not have a supervisor
+- Some employees **do not** supervise each other
+
+
+## Weak entities
+
+- If an entity's existance is dependance on another entity, it is a weak entity.
+- Examples
+	- An invoice line is dependent on there being an invoice
+  - A section is dependent on a course
+
+## Attributes associated with relationships
+
+- Attributes describe entities, but attributes can also describe aspects of relationships too
+- In a 'marries' relationship, the date and location can be attributes on the marries relationship
+
+- In these cases, it is often implemented as both a relationship and an entity. ie. a relationship, with a 'marriages' entity recording these attributes
+
+![entity-relationship-entity-or-relation.png](/entity-relationship-entity-or-relation.png)
+
+
+
+
+
+
 
 
 
