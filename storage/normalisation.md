@@ -2,7 +2,7 @@
 title: Normalisation of Data Tables
 description: Normalisation of Data Tables notes
 published: true
-date: 2021-01-10T22:43:59.525Z
+date: 2021-01-10T22:57:51.053Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-10T22:17:07.562Z
@@ -73,6 +73,44 @@ dateCreated: 2021-01-10T22:17:07.562Z
 ![normalisation-functional-dependency.png](/normalisation-functional-dependency-1.png)
 
 ![normalisation-functional-dependency-2.png](/normalisation-functional-dependency-2.png)
+
+# Keys
+
+![normalisation-keys.png](/normalisation-keys.png)
+
+# 1st Normal Form
+
+- Two-dimensional table
+- No repeating groups --> each row/column intersect only contains one value
+- Identify FDs and also primary key
+
+- Problems in 1NF
+	- Insert anomalies
+  - Update Anomalies
+  - Delete anomalies
+
+# 2nd Normal Form
+
+- 1NF
+- Every non-primary-key attribute is fully functionally dependent on the primary key
+
+- Problems in 1NF
+	- May be transitive dependencies, causing update anomalies
+
+If partial dependencies exist on the primary key remove them by placing them in a new relation along with a copy of their determinant
+
+# 3rd Normal Form
+
+- 2NF
+- No primary-key attribute is transitively dependent on a candidate key ( no transitive dependencies A->B->C)
+
+If transitive dependencies exist on the primary key, remove them by placing them in a new relation along with a copy of their dominant
+
+
+
+
+
+
 
 
 
