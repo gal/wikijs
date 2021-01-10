@@ -2,7 +2,7 @@
 title: Normalisation of Data Tables
 description: Normalisation of Data Tables notes
 published: true
-date: 2021-01-10T22:17:07.562Z
+date: 2021-01-10T22:19:37.549Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-10T22:17:07.562Z
@@ -40,3 +40,8 @@ dateCreated: 2021-01-10T22:17:07.562Z
   - Second Normal Form (2NF)
   - Third Normal Form (3NF)
   - Fourth Normal Form (4NF)
+
+## Case of a construction company
+- Building project -- Project No., Name, Employees assigned to the project
+
+
