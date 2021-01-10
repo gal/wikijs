@@ -2,7 +2,7 @@
 title: Normalisation of Data Tables
 description: Normalisation of Data Tables notes
 published: true
-date: 2021-01-10T22:27:33.688Z
+date: 2021-01-10T22:36:33.795Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-10T22:17:07.562Z
@@ -54,10 +54,21 @@ dateCreated: 2021-01-10T22:17:07.562Z
 - Delete anomalies
 	- If all employees that work in a proj. are deleted, then we lose the proj. No
 
-    
-    
-    
-    
-    
-    
+
+|Normal Form|Characteristic|
+|-----------|--------------|
+|First Normal Form| Table Format, no repeating groups and PK identified|
+|Second Normal Form|1NF and no partial dependencies|
+|Third Normal Form|2NF and no transitive dependecies|
+|Boyce-Codd Normall Form|Every determinant is a candidate key (special case of 3NF)|
+|Fourth Normal Form|3NF and no independent multivalued dependencies|
+
+## Functional Dependencies
+- This is a form of constraint and is part of a relation's schema to define a valid instance
+
+- Definition A -> B
+
+- The value of A functionally defines the value of B
+
+
 
