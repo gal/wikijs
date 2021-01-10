@@ -2,7 +2,7 @@
 title: Normalisation of Data Tables
 description: Normalisation of Data Tables notes
 published: true
-date: 2021-01-10T22:57:51.053Z
+date: 2021-01-10T23:00:07.338Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-10T22:17:07.562Z
@@ -105,13 +105,3 @@ If partial dependencies exist on the primary key remove them by placing them in 
 - No primary-key attribute is transitively dependent on a candidate key ( no transitive dependencies A->B->C)
 
 If transitive dependencies exist on the primary key, remove them by placing them in a new relation along with a copy of their dominant
-
-
-
-
-
-
-
-
-
-
