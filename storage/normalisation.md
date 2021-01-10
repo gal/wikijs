@@ -2,7 +2,7 @@
 title: Normalisation of Data Tables
 description: Normalisation of Data Tables notes
 published: true
-date: 2021-01-10T22:19:37.549Z
+date: 2021-01-10T22:27:33.688Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-10T22:17:07.562Z
@@ -41,7 +41,23 @@ dateCreated: 2021-01-10T22:17:07.562Z
   - Third Normal Form (3NF)
   - Fourth Normal Form (4NF)
 
-## Case of a construction company
-- Building project -- Project No., Name, Employees assigned to the project
+- Unnormalised Form (UNF)
+	- A table contains one or more repeating groups
+  - To create an unnormalised table...
+  	- Transform data to table format w/ columns & rows
+    
+## Redundancy Problems
+- Update anomalies
+	- If the proj. No. changes, we need to change the proj. No everywhere else required
+- Insert anomalies
+	- May not be possible to add a new projecft without employees, unless we have employees in the project
+- Delete anomalies
+	- If all employees that work in a proj. are deleted, then we lose the proj. No
 
+    
+    
+    
+    
+    
+    
 
