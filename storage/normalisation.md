@@ -2,7 +2,7 @@
 title: Normalisation of Data Tables
 description: Normalisation of Data Tables notes
 published: true
-date: 2021-01-10T22:36:33.795Z
+date: 2021-01-10T22:43:59.525Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-10T22:17:07.562Z
@@ -65,10 +65,15 @@ dateCreated: 2021-01-10T22:17:07.562Z
 
 ## Functional Dependencies
 - This is a form of constraint and is part of a relation's schema to define a valid instance
-
 - Definition A -> B
-
 - The value of A functionally defines the value of B
+
+- We say B has a functional dependency on another attribute A. If for any two records, which have the same value for A, the nteh values for B in these two records must be the same we illustrate it as:
+
+![normalisation-functional-dependency.png](/normalisation-functional-dependency-1.png)
+
+![normalisation-functional-dependency-2.png](/normalisation-functional-dependency-2.png)
+
 
 
 
