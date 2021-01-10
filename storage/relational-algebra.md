@@ -2,7 +2,7 @@
 title: Relational Algrebra
 description: Relational algebra notes
 published: true
-date: 2021-01-10T21:15:09.085Z
+date: 2021-01-10T21:19:09.209Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-10T21:15:09.085Z
@@ -90,7 +90,9 @@ $\sigma(bid=103) Reserves \bowtie Sailors$
 
 - Find sailors who've reserved a red boat
 
-$\pi (sname) (($
+$\pi sname ((^\sigma color='red'^{Boats}) \bowtie Reserves \bowtie Sailors$
+
+
 
 
 
