@@ -2,7 +2,7 @@
 title: Normalisation of Data Tables
 description: Normalisation of Data Tables notes
 published: true
-date: 2021-01-10T23:00:07.338Z
+date: 2021-01-11T08:36:34.213Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-10T22:17:07.562Z
@@ -76,7 +76,7 @@ dateCreated: 2021-01-10T22:17:07.562Z
 
 # Keys
 
-![normalisation-keys.png](/normalisation-keys.png)
+![normalisation-keys-1.png](/normalisation-keys-1.png)
 
 # 1st Normal Form
 
