@@ -2,13 +2,15 @@
 title: Stack
 description: 
 published: true
-date: 2021-01-11T12:18:31.307Z
+date: 2021-01-11T12:48:07.283Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-11T12:18:31.307Z
 ---
 
 # Stack
+
+LIFO ADT
 
 A stack is a collection of objects where
 - we take items from the top
