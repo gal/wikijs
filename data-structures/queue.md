@@ -2,7 +2,7 @@
 title: Queue
 description: 
 published: true
-date: 2021-01-11T12:36:29.703Z
+date: 2021-01-11T12:46:10.257Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-11T12:36:29.703Z
@@ -68,14 +68,51 @@ def enqueue(self, item):
   def dequeue(self):
   	if self.size == 0:
     	return None
-    	
-    
-    
-    
-    
-    
-    
-    
+    item = self.body[self.head]
+    self.body[self.head] = None
+    if self.size == 1:
+      self.head = 0 
+      self.tail = 0
+      self.size = 0
+		elif self.head == len(self.body) -1: #head was at end, must have wrapped around
+    	self.head = 0
+      self.size = self.size - 1
+		else:
+    	self.head += 1
+      self.size += 1
+    return item
+
+	def grow(self):
+  	oldbody = self.body
+    self.body = [None]*(2*self.size)
+    oldpos = self.head
+    pos = 0
+    if self.head < self.tail:
+    	while oldpos <= self.tail:
+      	self.body[pos] = oldbody[oldpos]
+        oldbody[oldpos] = None
+        pos += 1
+        oldpos += 1
+		else:
+    	while oldpos < len(oldbody):
+      	self.body[pos] = oldbody[oldpos]
+        oldbody[oldpos] = None
+        pos += 1
+        oldpos += 1
+			oldpos = 0
+    	while oldpos <= self.tail:
+      	self.body[pos] = oldbody[oldpos]
+        oldbody[oldpos] = None
+        pos += 1
+        oldpos += 1
+			oldpos = 0
+      while oldpos <= self.tail:
+      	self.body[pos] = oldbody[oldpos]
+        oldbody[oldpos] = None
+        pos += 1
+        oldpos += 1
+   self.head = 0
+   self.tail = self.size
 ```
 
 
