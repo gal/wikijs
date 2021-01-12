@@ -2,7 +2,7 @@
 title: Priority Queue
 description: 
 published: true
-date: 2021-01-12T16:01:04.786Z
+date: 2021-01-12T21:12:07.338Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-12T15:14:22.893Z
@@ -34,9 +34,13 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 # Adding an Element
 
 ![data-structures-priority-queue-binary-heap.png](/data-structures-priority-queue-binary-heap.png)
+- 
 
 ![data-structures-priority-queue-swap1.png](/data-structures-priority-queue-swap1.png)
 
 ![data-structures-priority-queue-swap2.png](/data-structures-priority-queue-swap2.png)
 
 ![data-structures-priority-queue-swap3.png](/data-structures-priority-queue-swap3.png)
+
+# Removing an Element
+
