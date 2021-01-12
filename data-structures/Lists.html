@@ -1,0 +1,66 @@
+<!--
+title: Lists
+description: 
+published: true
+date: 2021-01-12T21:03:02.798Z
+tags: 
+editor: ckeditor
+dateCreated: 2021-01-12T21:03:02.798Z
+-->
+
+<h1>Lists</h1>
+<h2>Everything in Python is an object</h2>
+<pre><code class="language-plaintext">x = 3    # x references the object 3
+y = 3    # y references the same object
+z = y    # z references the same object
+y = 4    # y now references the object 4</code></pre>
+<h2>User defined classes and objects</h2>
+<p>Each time we create an object from a class, Python creates a new object in memory (Python decides where it is stored):</p>
+<pre><code class="language-plaintext">c1 = Card(3, 3)
+c2 = Card(3, 3)    # Different object</code></pre>
+<h2>Python Lists are array-based lists</h2>
+<p>A list in Python is a sequence of references to objects. The references in the list are maintained in a contiguous physical block in memory, packed one after another in sequence - called an array-based list.</p>
+<p>Each index in the list references objects stored elsewhere such as 4 or “4”</p>
+<h2>Tuple</h2>
+<p>A tuple is a sequence of references to objects. A Tuple is immutable. Implementation is similar to Lists, but is able to take advantage of being immutable.</p>
+<h2>Space &amp;Time Complexity</h2>
+<p>The amount of space required for the list depends on the number of elements, not the space required for the basic objects.</p>
+<h3>Searching for an element</h3>
+<p>Finding an element in a list takes O(n), where n is the length of the list</p>
+<h3>Increasing list size</h3>
+<p>If there is space at the end of the list, use it.<br>Appending items to a list may require reservation of new area in memory for the entire list, and time to copy the list elements across.</p>
+<p>For a list that may grow to size n, naïve append take O(n<sup>2</sup>).</p>
+<p>Policy: Each time we must grow the list, double its size.<br>Doubling the size each time space is needed takes O(n) to build a list of size n.<br>Average cost of a single append is then O(1).</p>
+<h3>Popping an element</h3>
+<p>For a list of length n,&nbsp;<br>&nbsp; &nbsp; pop(i) takes (n-1-i) copies.<br>&nbsp; &nbsp; pop(0) takes n-1 copies<br>&nbsp; &nbsp; pop is O(n)</p>
+<h2>Operations</h2>
+<h3>Immutable</h3>
+<pre><code class="language-plaintext">x in s
+x not in s
+s + t
+s * n     # Add s to itself n times
+s[i]
+s[i:j]
+s[i:j:k]    # Slice of s from i to j with step k
+len(s)
+min(s)
+max(s)
+s.index(x)
+s.count(x)
+</code></pre>
+<h3>Mutable</h3>
+<pre><code class="language-plaintext">s[i] = x
+s[i:j] = t
+del s[i:j]
+s[i:j:k] = t
+del[i:j:k]
+s.append(x)
+s.clear()
+s.copy()
+s.extend(t)
+s.insert(i, x)
+s.pop([i])    # Retrieves item i and removes it
+s.remove(x)
+s.reverse()
+</code></pre>
+<p>&nbsp;</p>
