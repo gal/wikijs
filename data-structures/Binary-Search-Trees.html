@@ -1,0 +1,71 @@
+<!--
+title: Binary Search Trees
+description: 
+published: true
+date: 2021-01-13T00:01:34.506Z
+tags: 
+editor: ckeditor
+dateCreated: 2021-01-13T00:01:34.506Z
+-->
+
+<h1>Binary Search Trees</h1>
+<p>A binary search tree is a representation of an ordered sequence of elements where:</p>
+<ul>
+  <li>All left descendants of a node have values less than the node's value.</li>
+  <li>All right descendants of a node have values greater than the node's value.</li>
+</ul>
+<h2>Searching a binary search tree</h2>
+<p>Input: A reference to the root node of the tree.<br>Goal: If the element we are searching for is in the tree, return the node; else return None</p>
+<p>Complexity: If h is the height of the root, then this is O(h)</p>
+<pre><code class="language-plaintext">search(node, item):
+	if node == None
+		return None
+	if node's element &gt; item
+		return search(leftchild, item)
+	else if node's element &lt; item
+		return search(rightchild, item)
+	else return node</code></pre>
+<h2>Adding a node to a BST</h2>
+<p>Requirement: maintain the order property<br>Aim: minimize the work<br>First check the element is not already there, then we add it.<br>Where the search ended at null, we add the element there.</p>
+<p>Complexity: O(height) + O(1)</p>
+<pre><code class="language-plaintext">add(node, x):
+	if x &lt; current element
+		if no left child
+			add x as new left child
+		else
+			add(node.left, x)
+		else if x &gt; current element
+			if no right child
+				add x as new right child
+			else
+				add(node.right, x)
+		else
+			#do nothing – already there</code></pre>
+<h2>Removing a node to a BST</h2>
+<p>Requirement: maintain the order property<br>Aim: minimize the work</p>
+<p>Start by finding the node in the tree, and if it is not there, stop<br>Change the representation so that each node also points to its parent.</p>
+<ul>
+  <li>Removing a leaf: Update the parent's appropriate child reference. Set the node's parent to None. Remember the element. Set the node's element to None. Return the element.</li>
+  <li>Removing a root &amp; leaf: Remember the element, set the node's element to None. Return the Element.</li>
+  <li>Removing a semi-leaf: Rearrange the references so that the semileaf's child takes on the role of the semileaf, and then wipe out the old semileaf, and return its element.</li>
+  <li>Removing an internal node:&nbsp;<ul>
+      <li>We will always pick the biggest element less than our current node<ul>
+          <li>Move to the left child, then keep taking the right child until we find null</li>
+        </ul>
+      </li>
+      <li>We will move that element straight into our current node</li>
+      <li>Then remove the node we have copied and shift up its children<ul>
+          <li>We could also have chosen to replace a removed internal node with the smallest element that is bigger than it.</li>
+        </ul>
+      </li>
+      <li>Return the original element</li>
+    </ul>
+  </li>
+</ul>
+<p>Complexity: O(height)</p>
+<h2>Complexity</h2>
+<p>Search: Binary trees can enable binary search with complexity O(log n)</p>
+<ul>
+  <li>If we can ensure that the tree is close to being complete</li>
+</ul>
+<p>Adding: O(h)<br>Removing: O(h)</p>
