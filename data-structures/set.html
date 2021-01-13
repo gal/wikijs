@@ -1,0 +1,31 @@
+<!--
+title: Set
+description: 
+published: true
+date: 2021-01-13T00:20:24.421Z
+tags: 
+editor: ckeditor
+dateCreated: 2021-01-13T00:20:24.421Z
+-->
+
+<h1>The Set ADT</h1>
+<p>A set is a collection of elements, with no duplicates, and with no particular order among the elements.</p>
+<p>They serve as the foundation for more common data types such as Maps (or dictionaries).</p>
+<h2>Implementation</h2>
+<p>Standard implementations include:</p>
+<ul>
+  <li>Array-based lists</li>
+  <li>Linked lists</li>
+  <li>AVL trees</li>
+  <li>Hash Maps</li>
+</ul>
+<p>If the elements can be ordered, even if it doesn't maintain order. Then we can implement the set using AVL Trees.</p>
+<ul>
+  <li>Adding</li>
+  <li>Deleting</li>
+  <li>Finding</li>
+  <li>Iterating over</li>
+</ul>
+<p>elements, and these operations are the basis for the other operations (intersect, union, difference, etc.)</p>
+<p>We will create a new class. Set objects will refer to the current root node in the underlying AVL tree, and the root node's parent will be the Set object: the AVL Node operations must check for this special parent (and not try to rebalance that parent). Maintain the size of the set in this class.</p>
+<figure class="image"><img src="/setadt.png"></figure>
